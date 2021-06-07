@@ -269,6 +269,18 @@ spec:
           verbs:
           - '*'
         - apiGroups:
+          - oauth.openshift.io
+          resources:
+          - oauthclients 
+          verbs:
+          - create
+          - delete
+          - get
+          - list
+          - patch
+          - update
+          - watch
+        - apiGroups:
           - apps
           resources:
           - deployments
@@ -346,6 +358,7 @@ spec:
           - patch
           - update
           - watch
+<<<<<<< HEAD
         - apiGroups:
           - ""
           resources:
@@ -367,6 +380,8 @@ spec:
           - patch
           - update
           - watch   
+=======
+>>>>>>> feat: GitOps Operator enables RHSSO for each ArgoCD Instance(#GITOPS-946)
         serviceAccountName: gitops-operator
       - rules:
         - apiGroups:
