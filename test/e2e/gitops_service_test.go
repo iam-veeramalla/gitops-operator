@@ -29,19 +29,26 @@ import (
 )
 
 var (
-	retryInterval        = time.Second * 5
-	timeout              = time.Minute * 2
-	cleanupRetryInterval = time.Second * 1
-	cleanupTimeout       = time.Second * 5
+	retryInterval             = time.Second * 5
+	timeout                   = time.Minute * 2
+	cleanupRetryInterval      = time.Second * 1
+	cleanupTimeout            = time.Second * 5
+	insecure             bool = false
 )
 
 const (
 	operatorName              = "gitops-operator"
+	argoCDConfigMapName       = "argocd-cm"
 	argoCDRouteName           = "openshift-gitops-server"
 	argoCDNamespace           = "openshift-gitops"
+	authURL                   = "/auth/realms/master/protocol/openid-connect/token"
 	depracatedArgoCDNamespace = "openshift-pipelines-app-delivery"
 	consoleLinkName           = "argocd"
 	argoCDInstanceName        = "openshift-gitops"
+	defaultKeycloakIdentifier = "keycloak"
+	defaultTemplateIdentifier = "rhsso"
+	realmURL                  = "/auth/admin/realms/argocd"
+	rhssosecret               = "keycloak-secret"
 )
 
 func TestGitOpsService(t *testing.T) {
@@ -56,6 +63,9 @@ func TestGitOpsService(t *testing.T) {
 	t.Run("Validate ConsoleLink", validateConsoleLink)
 	t.Run("Validate ArgoCD Installation", validateArgoCDInstallation)
 	t.Run("Validate ArgoCD Metrics Configuration", validateArgoCDMetrics)
+	t.Run("Validate Redhat Single sign-on Installation", verifyRHSSOInstallation)
+	t.Run("Validate Redhat Single sign-on Configuration", verifyRHSSOConfiguration)
+	t.Run("Validate Redhat Single sign-on Uninstallation", verifyRHSSOUnInstallation)
 	t.Run("Validate tear down of ArgoCD Installation", tearDownArgoCD)
 }
 
