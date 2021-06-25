@@ -119,8 +119,6 @@ github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kd
 github.com/apache/arrow/go/arrow v0.0.0-20191024131854-af6fa24be0db/go.mod h1:VTxUBvSJ3s3eHAg65PNgrsn5BtqCRPdmyXh6rAfdxN0=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
 github.com/apache/thrift v0.13.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
-github.com/argoproj-labs/argocd-operator v0.0.16-0.20210625105329-3ee1128ee5a8 h1:gZqdrkXpkJfcqosEYxNVRnBNOYrWQSsyOxxrwdBIuTY=
-github.com/argoproj-labs/argocd-operator v0.0.16-0.20210625105329-3ee1128ee5a8/go.mod h1:b6t078lHz63c2mTeyJuDXwceCbAu9GJxeWlDn7XDj7w=
 github.com/argoproj/argo-cd v1.5.8 h1:fmJP50W48OVGeDMZlbYBG0SMHY50wsEETvOx8IhHi/Q=
 github.com/argoproj/argo-cd v1.5.8/go.mod h1:UPOPiF6Y1y/oTL3X1KcuLbu7ljD7f4+SIaXvlowBmhE=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
@@ -644,6 +642,8 @@ github.com/hpcloud/tail v1.0.0 h1:nfCOvKYfkgYP8hkirhJocXT2+zOD8yUNjXaWfTlyFKI=
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
 github.com/huandu/xstrings v1.3.1/go.mod h1:y5/lhBue+AyNmUVz9RLU9xbLR0o4KIIExikq4ovT0aE=
 github.com/hudl/fargo v1.3.0/go.mod h1:y3CKSmjA+wD2gak7sUSXTAoopbhU08POFhmITJgmKTg=
+github.com/iam-veeramalla/argocd-operator v0.0.15-0.20210625113031-489b35a48a9a h1:MkqNH0Y5z1D57Lo+KsaIvdMr/MnuDCxLOW5HpCSHIPQ=
+github.com/iam-veeramalla/argocd-operator v0.0.15-0.20210625113031-489b35a48a9a/go.mod h1:b6t078lHz63c2mTeyJuDXwceCbAu9GJxeWlDn7XDj7w=
 github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365/go.mod h1:SK73tn/9oHe+/Y0h39VT4UCxmurVJkR5NA7kMEAOgSE=
 github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/imdario/mergo v0.3.5/go.mod h1:2EnlNZ0deacrJVfApfmtdGgDfMuh/nq6Ok1EcJh5FfA=
